@@ -3,13 +3,28 @@
 {% block title %}Home{% endblock %}
 
 {% block body %}
-    <div class="pink-stripe">
-        <h1>
-            Let's start coding&nbsp;&#129304;
-        </h1>
+    <h1 class="text-light text-center mt-5 mb-5 pb-5 pt-5">WELCOME TO GO MAKE GAMES</h1>
+
+    
+    <div class="row">
+        <div class="lw-box-1 p-4 mt-5 d-flex flex-column justify-content-evenly col-2 container lw-container"> 
+            <p class="text-light fs-5">Go Make games is a platform where you can download free video game assets.</p>
+            <p class="text-light fs-5">All assets are made by me and can be used freely for any project.</p>
+            <p class="text-light fs-5">So Go Make Games!</p>
+        </div>
+        <img class="container img-fluid col-3 img-border-radius" src="{{ asset('build/images/forest.png') }}">
+        <img class="container img-fluid col-2 img-border-radius" src="{{ asset('build/images/princess.png') }}">
     </div>
-    <div class="white-stripe">
-        <img src="{{ asset('build/images/logo-wild-code-school.svg') }}"
-             alt="">
+
+    <div class="row mt-5 pt-5">
+        <img class="container img-fluid col-2 img-border-radius " src="{{ asset('build/images/potion.png') }}">
+        <img class="container img-fluid col-3 img-border-radius " src="{{ asset('build/images/village.png') }}">
+         <div class="lw-box-2 container p-4 mt-5 col-2"> 
+            <p class="text-light fs-5">But who am I? You may ask yourself.I am soda_bear, an independent creator who enjoys making art for game developpers accross the globe to use.</p>
+            <p class="text-light fs-5">I can also make custom art for you!</p>
+            <p class="text-light fs-5">Feel free to contact me for special inquiries.</p>
+        </div>
     </div>
+
+    
 {% endblock %}
