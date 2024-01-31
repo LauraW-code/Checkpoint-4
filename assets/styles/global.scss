@@ -1,0 +1,49 @@
+$font-family-titres: 'Chakra Petch', sans-serif;
+$font-family-textes: 'Poppins', sans-serif;
+$font-family-base: $font-family-textes;
+$primary: rgba(225,145,174,1);
+$secondary: rgba(0,107,131,1);
+$light: white;
+
+body {
+    background: rgb(225,145,174);
+    background: linear-gradient(0deg, rgba(225,145,174,1) 0%, rgba(255,248,251,0.6250875350140056) 12%, rgba(255,248,251,0.5606617647058824) 19%, rgba(0,107,131,1) 100%);
+    min-height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: $font-family-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-titres;
+   
+}
+
+.logo-lw{
+    max-height: 4rem;
+}
+
+.lw-box-1 {
+    background-color: $primary;
+    outline: 6px dashed #ffffff;
+    border-radius: 2rem;
+}
+
+.lw-box-2 {
+    background-color: $secondary;
+    outline: 6px dashed #ffffff;
+    border-radius: 2rem;
+}
+
+.img-border-radius {
+    border-radius: 2rem;
+}
+
+.lw-container{
+    height: 100%;
+}
+
+.icons{
+    max-height: 50px;
+}
