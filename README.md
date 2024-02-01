@@ -1,4 +1,16 @@
-# Project 3 - Starter Kit - Symfony
+# Checkpoint 4 - :joystick: Go make games website :video_game:
+
+:diamond_shape_with_a_dot_inside: The challenge of this checkpoint was to present a website featuring front and back features, in two days.
+
+:diamond_shape_with_a_dot_inside: Its aim was to assert how much I was able accomplish in this timeframe.
+
+:diamond_shape_with_a_dot_inside: My project for this task was to design a website for an artist making video game assets.
+The artist needs to upload files to the website that can then be downloaded by any visitor, for free.
+
+:diamond_shape_with_a_dot_inside: The most challenging part for me was making the website fully responsive on the visitor side, but the whole project was a lot of fun and very engaging.
+I realised I was more comfortable with Symfony than I initially thought.
+
+You can find all the installation information below :arrow_down:
 
 ## Change Log
 See [CHANGELOG.md](CHANGELOG.md) for more information.
