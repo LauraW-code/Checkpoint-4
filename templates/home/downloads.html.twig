@@ -2,134 +2,51 @@
 
 {% block body %}
 
-{# Accordion for separating downloads type #}
-<div class="accordion container mt-5 pt-5" id="accordionExample">
-  <div class="accordion-item">
 
-  {# First part about characters #}
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Characters
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body d-flex align-items-center flex-column ">
-        {% for character in characters %}
-        <div class="card mb-3" style="max-width: 640px;">
-            <div class="row g-0 d-flex align-items-center">
-                <div class="col-md-4">
-                <img src="/uploads/character/{{character.picture}}" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">{{character.name}}</h5>
-                    <p class="card-text">{{character.description}}</p>
-                    <a href="{{ path('app_download_character', {'id':character.id}) }}"<button type="button">Download</p></a>
-                </div>
-                </div>
-            </div>
+<div class="container mt-5 pt-5">
+  <div class="d-flex justify-content-around flex-wrap">
+    <div class="card mb-5" style="max-width: 80rem;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/uploads/character/princess.png" class="img-fluid rounded-start" alt="...">
         </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Backgrounds
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body d-flex align-items-center flex-column ">
-        {% for background in backgrounds %}
-        <div class="card mb-3" style="max-width: 640px;">
-            <div class="row g-0 d-flex align-items-center">
-                <div class="col-md-4">
-                <img src="/uploads/background/{{background.picture}}" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">{{background.name}}</h5>
-                    <p class="card-text">{{background.description}}</p>
-                    <a href="{{ path('app_download_background', {'id':background.id}) }}"<button type="button">Download</p></a>
-                </div>
-                </div>
-            </div>
+        <div class="col-md-8">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h3 class="card-title pt-3 pb-5 text-light">Characters</h5>
+            <p class="card-text text-light">Here you can find a wide array of characters type. Many races are available, so you will most likely find what suits your need.</p>
+            <a href="{{ path('download_characters') }}" class="btn btn-primary text-light btn-custom align-self-end">Go to characters</a>
+          </div>
         </div>
-        {% endfor %}
       </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Effects
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        {% for effect in effects %}
-        <div class="card mb-3" style="max-width: 640px;">
-            <div class="row g-0 d-flex align-items-center">
-                <div class="col-md-4">
-                <img src="/uploads/effect/{{effect.picture}}" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">{{effect.name}}</h5>
-                    <p class="card-text">{{effect.description}}</p>
-                    <a href="{{ path('app_download_effect', {'id':effect.id}) }}"<button type="button">Download</p></a>
-                </div>
-                </div>
-            </div>
+
+    <div class="card mb-5" style="max-width: 80rem;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/uploads/background/space.png" class="img-fluid rounded-start" alt="...">
         </div>
-        {% endfor %}
+        <div class="col-md-8">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h3 class="card-title pt-3 pb-5 text-light">Backgrounds</h5>
+            <p class="card-text text-light">Discover a selection of backgrounds for your game. Futuristic, medieval or natural... many styles to cater to all your needs</p>
+            <a href="{{ path('download_backgrounds') }}" class="btn btn-primary text-light btn-custom align-self-end">Go to backgrounds</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div> 
 
-
-<div class="card mb-3" style="max-width: 50vw;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="/uploads/character/princess.png" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title pb-5">Characters</h5>
-        <p class="card-text">Here you can find a wide array of characters type. Many races are available, so you will most likely find what suits your need.</p>
-        <a href="{{ path('download_characters') }}"><p class="card-text"><small class="text-body-secondary">Go to characters</small></p></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="card mb-3" style="max-width: 50vw;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="/uploads/background/space.png" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title pb-5">Backgrounds</h5>
-        <p class="card-text">Discover a selection of backgrounds for your game. Futuristic, medieval or natural... many styles to cater to all your needs</p>
-        <a href="{{ path('download_backgrounds') }}"><p class="card-text"><small class="text-body-secondary">Go to backgrounds</small></p></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="card mb-3" style="max-width: 50vw;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="/uploads/effect/potion.png" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title pb-5">Effects</h5>
-        <p class="card-text">Abracadabra, boombadaboom... Wether your a spellcrafter or a building blower, there's an effect for your desire!</p>
-        <a href="{{ path('download_effects') }}"><p class="card-text"><small class="text-body-secondary">Go to effects</small></p></a>
+    <div class="card mb-5" style="max-width: 80rem;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/uploads/effect/potion.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h3 class="card-title pt-3 pb-5 text-light">Effects</h5>
+            <p class="card-text text-light">Abracadabra, boombadaboom... Wether your a spellcrafter or a building blower, there's an effect for your desire!</p>
+            <a href="{{ path('download_effects') }}" class="btn btn-primary text-light btn-custom align-self-end">Go to effects</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

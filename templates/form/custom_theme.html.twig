@@ -9,7 +9,7 @@
         {%- set row_class = row_class|default(row_attr.class|default('form-control')) -%}
         {%- if 'form-floating' not in row_class and 'input-group' not in row_class -%}
             {%- if expanded is not defined or not expanded -%}
-                {%- set label_attr = label_attr|merge({class: (label_attr.class|default('') ~ ' col-form-label')|trim}) -%}
+                {%- set label_attr = label_attr|merge({class: (label_attr.class|default('') ~ ' col-form-label text-light')|trim}) -%}
             {%- endif -%}
             {%- set label_attr = label_attr|merge({class: (label_attr.class|default('') ~ ' ' ~ block('form_label_class'))|trim}) -%}
         {%- endif -%}

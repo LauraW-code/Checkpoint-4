@@ -2,27 +2,40 @@
 
 {% block body %}
 
-<a href="{{ path('admin_new_character') }}"><button>Add Character</button></a>
-<table class="table px-4 table-striped table-hover mt-5 container">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Description</th>
-      <th scope="col">Picture</th>
-      <th scope="col"></th>
-    </tr>
-  </thead>
-  <tbody>
-  {% for character in characters %}
-    <tr>
-      <td>{{character.name}}</td>
-      <td>{{character.description}}</td>
-      <td><img class="img-fluid" src="/uploads/character/{{character.picture}}" alt="{{ character.name }} Picture" style="max-height: 340px;"></td>
-      <th scope="col d-flex flex-column justify-content-center">
-        <a href="{{ path('admin_edit_character', {'id': character.id} )}}" class="">Edit</a>
-        <a href="{{ path('admin_delete_character', {'id': character.id} )}}" class="">Delete</a></th>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<h1 class="text-center text-light mt-5 mb-5"> CHARACTERS </h1>
+
+<div class="container">
+  <a href="{{ path('admin_new_character') }}" class="btn btn-primary text-light">Add Character</a>
+  <table class="table px-4 table-striped table-hover mt-5">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Picture</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for character in characters %}
+      <tr>
+        <td>{{character.name}}</td>
+        <td>{{character.description}}</td>
+        <td>
+          <img class="img-fluid" src="/uploads/character/{{character.picture}}" alt="{{ character.name }} Picture" style="max-height: 200px;">
+        </td>
+        <td>
+          <div class="d-flex flex-column align-items-center">
+            <div>
+              <a href="{{ path('admin_edit_character', {'id': character.id} )}}" class="btn btn-primary text-light mt-5 mb-3">Edit</a>
+            </div>
+            <div>
+              <a href="{{ path('admin_delete_character', {'id': character.id} )}}" class="btn btn-secondary text-light">Delete</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 {% endblock %}

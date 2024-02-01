@@ -2,8 +2,11 @@
 
 {% block body %}
 
-<a href="{{ path('admin_new_effect') }}"><button>Add Effect</button></a>
-<table class="table px-4 table-striped table-hover mt-5 container">
+<h1 class="text-center text-light mt-5  mb-5"> EFFECTS </h1>
+
+<div class="container">
+<a href="{{ path('admin_new_effect') }}" class="btn btn-primary text-light">Add Effect</a>
+<table class="table px-4 table-striped table-hover mt-5">
   <thead>
     <tr>
       <th scope="col">Name</th>
@@ -17,12 +20,22 @@
     <tr>
       <td>{{effect.name}}</td>
       <td>{{effect.description}}</td>
-      <td><img class="img-fluid" src="/uploads/effect/{{effect.picture}}" alt="{{ effect.name }} Picture" style="max-height: 340px;"></td>
-      <th scope="col d-flex flex-column justify-content-center">
-        <a href="{{ path('admin_edit_effect', {'id': effect.id} )}}" class="">Edit</a>
-        <a href="{{ path('admin_delete_effect', {'id': effect.id} )}}" class="">Delete</a></th>
+      <td>
+        <img class="img-fluid" src="/uploads/effect/{{effect.picture}}" alt="{{ effect.name }} Picture" style="max-height: 200px;">
+      </td>
+      <td>
+        <div class="d-flex flex-column align-items-center">
+          <div>
+            <a href="{{ path('admin_edit_effect', {'id': effect.id} )}}" class="btn btn-primary text-light mt-5 mb-3">Edit</a>
+          </div>
+          <div>
+            <a href="{{ path('admin_delete_effect', {'id': effect.id} )}}" class="btn btn-secondary text-light">Delete</a>
+          </div>
+        </div>
+      </td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
+</div>
 {% endblock %}
