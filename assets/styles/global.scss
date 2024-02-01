@@ -13,11 +13,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: $font-family-base;
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-titres;
-   
 }
 
 .logo-lw{
@@ -42,4 +42,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .icons{
     max-height: 50px;
+}
+
+.accordion-body {
+    background-color: $secondary;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
 }
