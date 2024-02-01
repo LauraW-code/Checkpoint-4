@@ -1,5 +1,5 @@
 # Checkpoint 4 
-:joystick: Go make games website :video_game:
+# :joystick: Go make games website :video_game:
 
 :diamond_shape_with_a_dot_inside: The challenge of this checkpoint was to present a website featuring front and back features, in two days.
 
