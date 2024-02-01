@@ -11,6 +11,8 @@ The artist needs to upload files to the website that can then be downloaded by a
 :diamond_shape_with_a_dot_inside: The most challenging part for me was making the website fully responsive on the visitor side, but the whole project was a lot of fun and very engaging.
 I realised I was more comfortable with Symfony than I initially thought.
 
+:diamond_shape_with_a_dot_inside: This project was made using Symfony, Bootstrap, HTML and SCSS.
+
 :arrow_down: You can find all the installation information below :arrow_down:
 
 ## Change Log
