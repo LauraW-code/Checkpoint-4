@@ -17,7 +17,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-titres;
-   
 }
 
 .logo-lw{
@@ -40,10 +39,31 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 2rem;
 }
 
-.lw-container{
-    height: 100%;
-}
-
 .icons{
     max-height: 50px;
+}
+
+.accordion-body {
+    background-color: $secondary;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.card {
+    background-color: $secondary !important;
+    outline: 6px dashed #ffffff;
+    border:none !important;
+    border-radius: 2rem;
+}
+
+.card-body{
+    height: 100%;
+
+}
+
+.btn-custom{
+    width: 35%;
 }

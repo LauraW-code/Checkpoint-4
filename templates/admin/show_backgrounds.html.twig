@@ -1,0 +1,41 @@
+{% extends 'dashboard_base.html.twig' %}
+
+{% block body %}
+
+<h1 class="text-center text-light mt-5 mb-5"> BACKGROUNDS </h1>
+
+<div class="container">
+  <a href="{{ path('admin_new_background') }}" class="btn btn-primary text-light">Add Background</a>
+  <table class="table px-4 table-striped table-hover mt-5 ">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Picture</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for background in backgrounds %}
+      <tr>
+        <td>{{background.name}}</td>
+        <td>{{background.description}}</td>
+        <td>
+          <img class="img-fluid" src="/uploads/background/{{background.picture}}" alt="{{ background.name }} Picture" style="max-height: 200px;">
+        </td>
+        <td>
+          <div class="d-flex flex-column align-items-center">
+            <div>
+              <a href="{{ path('admin_edit_background', {'id': background.id} )}}" class="btn btn-primary text-light mt-5 mb-3">Edit</a>
+            </div>
+            <div>
+              <a href="{{ path('admin_delete_background', {'id': background.id} )}}" class="btn btn-secondary text-light">Delete</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

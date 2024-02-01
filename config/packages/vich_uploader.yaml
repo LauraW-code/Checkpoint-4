@@ -1,0 +1,19 @@
+vich_uploader:
+    db_driver: orm
+
+    metadata:
+        type: attribute
+
+    mappings:
+            character:
+                uri_prefix: /uploads/character/
+                upload_destination: '%upload_directory_character%'
+                namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+            background:
+                uri_prefix: uploads/background/
+                upload_destination: '%upload_directory_background%'
+                namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+            effect:
+                uri_prefix: uploads/effect
+                upload_destination: '%upload_directory_effect%'
+                namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
