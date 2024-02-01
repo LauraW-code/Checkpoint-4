@@ -1,0 +1,28 @@
+{% extends 'dashboard_base.html.twig' %}
+
+{% block body %}
+
+<a href="{{ path('admin_new_effect') }}"><button>Add Effect</button></a>
+<table class="table px-4 table-striped table-hover mt-5 container">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Picture</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for effect in effects %}
+    <tr>
+      <td>{{effect.name}}</td>
+      <td>{{effect.description}}</td>
+      <td><img class="img-fluid" src="/uploads/effect/{{effect.picture}}" alt="{{ effect.name }} Picture" style="max-height: 340px;"></td>
+      <th scope="col d-flex flex-column justify-content-center">
+        <a href="{{ path('admin_edit_effect', {'id': effect.id} )}}" class="">Edit</a>
+        <a href="{{ path('admin_delete_effect', {'id': effect.id} )}}" class="">Delete</a></th>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

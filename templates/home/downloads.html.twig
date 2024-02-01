@@ -24,7 +24,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{character.name}}</h5>
                     <p class="card-text">{{character.description}}</p>
-                    <button type="button">Download</p>
+                    <a href="{{ path('app_download_character', {'id':character.id}) }}"<button type="button">Download</p></a>
                 </div>
                 </div>
             </div>
@@ -40,8 +40,23 @@
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      <div class="accordion-body d-flex align-items-center flex-column ">
+        {% for background in backgrounds %}
+        <div class="card mb-3" style="max-width: 640px;">
+            <div class="row g-0 d-flex align-items-center">
+                <div class="col-md-4">
+                <img src="/uploads/background/{{background.picture}}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{background.name}}</h5>
+                    <p class="card-text">{{background.description}}</p>
+                    <a href="{{ path('app_download_background', {'id':background.id}) }}"<button type="button">Download</p></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -53,7 +68,68 @@
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        {% for effect in effects %}
+        <div class="card mb-3" style="max-width: 640px;">
+            <div class="row g-0 d-flex align-items-center">
+                <div class="col-md-4">
+                <img src="/uploads/effect/{{effect.picture}}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{effect.name}}</h5>
+                    <p class="card-text">{{effect.description}}</p>
+                    <a href="{{ path('app_download_effect', {'id':effect.id}) }}"<button type="button">Download</p></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+<div class="card mb-3" style="max-width: 50vw;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/uploads/character/princess.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title pb-5">Characters</h5>
+        <p class="card-text">Here you can find a wide array of characters type. Many races are available, so you will most likely find what suits your need.</p>
+        <a href="{{ path('download_characters') }}"><p class="card-text"><small class="text-body-secondary">Go to characters</small></p></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3" style="max-width: 50vw;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/uploads/background/space.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title pb-5">Backgrounds</h5>
+        <p class="card-text">Discover a selection of backgrounds for your game. Futuristic, medieval or natural... many styles to cater to all your needs</p>
+        <a href="{{ path('download_backgrounds') }}"><p class="card-text"><small class="text-body-secondary">Go to backgrounds</small></p></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3" style="max-width: 50vw;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/uploads/effect/potion.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title pb-5">Effects</h5>
+        <p class="card-text">Abracadabra, boombadaboom... Wether your a spellcrafter or a building blower, there's an effect for your desire!</p>
+        <a href="{{ path('download_effects') }}"><p class="card-text"><small class="text-body-secondary">Go to effects</small></p></a>
       </div>
     </div>
   </div>
