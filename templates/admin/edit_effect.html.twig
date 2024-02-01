@@ -3,15 +3,15 @@
 {% block body %}
     <h1 class="text-center text-light mx-auto pt-5 pb-5">Edit "{{ effect.name }}"</h1>
     
-    <div class="container mx-auto lw-box-1 p-4">
+    <div class="container mx-auto lw-box-2 p-4" style="width: 70rem;">
     {{ form_start(form, {'attr': {'enctype': 'multipart/form-data'}}) }}
         {{ form_row(form.name) }}
         {{ form_row(form.description) }}
         {{ form_row(form.pictureFile) }}
         
-        <button type="submit" class=""> Save changes</button>
+        <button type="submit" class="btn btn-primary text-light mt-3"> Save changes</button>
     {{ form_end(form) }}
 
-    <a href="{{ path('admin_show_effects') }}" class="text-light">Go Back</a>
+    <a href="{{ path('admin_show_effects') }}" class="btn btn-primary text-light mt-3">Go Back</a>
      </div>
 {% endblock %}
