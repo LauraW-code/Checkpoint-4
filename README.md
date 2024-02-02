@@ -3,7 +3,7 @@
 
 :diamond_shape_with_a_dot_inside: The challenge of this checkpoint was to present a website featuring front and back features, in two days.
 
-:diamond_shape_with_a_dot_inside: Its aim was to assert how much I was able accomplish in this timeframe.
+:diamond_shape_with_a_dot_inside: Its aim was to assert how much I was able to accomplish in this timeframe.
 
 :diamond_shape_with_a_dot_inside: My project for this task was to design a website for an artist making video game assets.
 The artist needs to upload files to the website that can then be downloaded by any visitor, for free.
