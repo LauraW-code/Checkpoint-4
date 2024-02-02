@@ -21,6 +21,9 @@ I realised I was more comfortable with Symfony than I initially thought.
 
 ![checkpoint_4_03](https://github.com/LauraW-code/Checkpoint-4/assets/124527993/f11e418d-b3de-48f4-a7df-44a52324cf75)
 
+![chekpoint_4_04](https://github.com/LauraW-code/Checkpoint-4/assets/124527993/8ef9cede-58dd-4c1a-b607-5aed36059158)
+
+
 
 ## Change Log
 See [CHANGELOG.md](CHANGELOG.md) for more information.
