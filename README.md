@@ -1,6 +1,5 @@
-![](https://komarev.com/ghpvc/?username=LauraW-code&color=blueviolet&style=for-the-badge)
-
 # <p align="center"> Checkpoint 4 </p>
+<p align="center"> ![](https://komarev.com/ghpvc/?username=LauraW-code&color=blueviolet&style=for-the-badge) </p>
 # :joystick: Go make games website :video_game:
 
 :diamond_shape_with_a_dot_inside: The challenge of this checkpoint was to present a website featuring front and back features, in two days.
