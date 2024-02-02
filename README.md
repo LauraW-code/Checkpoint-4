@@ -15,6 +15,13 @@ I realised I was more comfortable with Symfony than I initially thought.
 
 :arrow_down: You can find all the installation information below :arrow_down:
 
+![checkpoint_4](https://github.com/LauraW-code/Checkpoint-4/assets/124527993/fdff6f16-adc6-4cb7-9da3-35d59dc0f3d1)
+
+![checkpoint_4_02](https://github.com/LauraW-code/Checkpoint-4/assets/124527993/7cdaded7-e6d7-408c-8706-812473eb0f7c)
+
+![checkpoint_4_03](https://github.com/LauraW-code/Checkpoint-4/assets/124527993/f11e418d-b3de-48f4-a7df-44a52324cf75)
+
+
 ## Change Log
 See [CHANGELOG.md](CHANGELOG.md) for more information.
 
