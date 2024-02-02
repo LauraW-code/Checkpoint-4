@@ -24,13 +24,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .lw-box-1 {
-    background-color: $primary;
+    background-color: $primary !important;
     outline: 6px dashed #ffffff;
     border-radius: 2rem;
 }
 
 .lw-box-2 {
-    background-color: $secondary;
+    background-color: $secondary !important;
     outline: 6px dashed #ffffff;
     border-radius: 2rem;
 }
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
-    background-color: $secondary !important;
+    //background-color: $secondary !important;
     outline: 6px dashed #ffffff;
     border:none !important;
     border-radius: 2rem;
