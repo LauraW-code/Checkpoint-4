@@ -1,3 +1,5 @@
+![](https://komarev.com/ghpvc/?username=LauraW-code&color=blueviolet&style=for-the-badge)
+
 # <p align="center"> Checkpoint 4 </p>
 # :joystick: Go make games website :video_game:
 
