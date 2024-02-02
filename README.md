@@ -1,6 +1,6 @@
 # <p align="center"> Checkpoint 4 </p>
 
-<p align="center"> ![](https://komarev.com/ghpvc/?username=LauraW-code&color=blueviolet&style=for-the-badge) </p>
+<p align="center"><img src="https://komarev.com/ghpvc/?username=LauraW-code&color=blueviolet&style=for-the-badge"></p>
 
 # :joystick: Go make games website :video_game:
 
